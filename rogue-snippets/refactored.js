@@ -2,7 +2,7 @@
 // This keeps only the even numbers, then squares them.
 function getSquaredEvenNumbers(values) {
   return values
-    .filter((value) => value !== 0 && value % 2 === 0)
+    .filter((value) => Boolean(value) && value % 2 === 0)
     .map((value) => value * value);
 }
 
